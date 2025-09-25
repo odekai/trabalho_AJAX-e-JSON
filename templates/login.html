@@ -1,0 +1,29 @@
+<!--Instruções
+Faça uma tela de login para cadastrar ou visualizar alunos.
+
+Apenas o administrador pode cadastrar alunos, ele também pode visualizar
+
+Outros usuários podem visualizar os alunos apenas
+
+Crie um JSON com os campos nome, matrícula, senha e acesso
+
+O login deve ser feito com matrícula e senha
+
+Ao fazer login, verifique se o acesso é comum ou admin. Se o acesso for comum, vá para a página de visualizar,
+ se o acesso for admin, pergunte se ele quer visualizar ou cadastrar e mande para a página correta.-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+    <form method="post" action="{{ url_for('login') }}">
+        Matrícula: <input type="text" name="matricula" required><br>
+        Senha: <input type="password" name="senha" required><br>
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+</html>

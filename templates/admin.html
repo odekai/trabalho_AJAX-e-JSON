@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Área Admin</title>
+</head>
+<body>
+    <h2>Bem-vindo, Admin!</h2>
+    <form method="post" action="{{ url_for('admin') }}">
+        <button name="escolha" value="cadastrar">Cadastrar Aluno</button>
+        <button name="escolha" value="visualizar">Visualizar Alunos</button>
+    </form>
+</body>
+</html>
