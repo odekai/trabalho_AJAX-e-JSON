@@ -1,0 +1,38 @@
+:root
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    padding-top: 300px ;
+   
+    
+
+    
+}
+body{
+    background-color: rgb(128, 97, 131);
+}
+
+input{
+    display: flex;
+    justify-content: center;
+      border: 0.3px solid black;
+    border-radius: 15px   
+}
+
+h2{
+
+    display: flex;
+    padding-right: 20px;
+    padding-bottom: 35px;
+    text-shadow: 2px 2px black;
+    font-size: 35px;
+  
+   
+    
+}
+form{
+    font-weight: bold;
+    color: black
+}
