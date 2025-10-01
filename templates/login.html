@@ -17,13 +17,22 @@ Ao fazer login, verifique se o acesso é comum ou admin. Se o acesso for comum, 
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
 </head>
 <body>
-    <h2>Login</h2>
-    <form method="post" action="{{ url_for('login') }}">
-        Matrícula: <input type="text" name="matricula" required><br>
-        Senha: <input type="password" name="senha" required><br>
-        <input type="submit" value="Entrar">
-    </form>
+   <div class="container">
+       <h2>Login</h2>
+      <form method="post" action="{{ url_for('login') }}">
+        
+           Matrícula: 
+           <input type="text" name="matricula" required><br>
+           Senha: 
+           <input type="password" name="senha" required><br>
+
+           <input type="submit" value="Entrar">
+      </form>
+    </div>
 </body>
 </html>
